@@ -1448,3 +1448,33 @@ a {
     }
 
 }
+/* ========================================
+   IMAGE ENHANCEMENT
+======================================== */
+
+.hero-image,
+.about-image,
+.activity-image {
+    background-color: #dcefe0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Activity image overlay */
+.activity-image {
+    position: relative;
+    isolation: isolate;
+}
+
+.activity-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        180deg,
+        transparent 60%,
+        rgba(15, 23, 42, 0.12)
+    );
+}
