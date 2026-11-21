@@ -556,3 +556,184 @@ a {
     }
 
 }
+
+/* ========================================
+   13. ACTIVITIES SECTION
+======================================== */
+
+.activities-section {
+    padding: 80px 0;
+    background-color: var(--color-surface);
+}
+
+
+/* Section Header */
+
+.activities-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.activities-description {
+    max-width: 650px;
+    margin-top: 10px;
+
+    color: var(--color-text);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* See All Link */
+
+.activities-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    flex-shrink: 0;
+    margin-bottom: 12px;
+
+    color: var(--color-primary);
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: gap 0.2s ease;
+}
+
+.activities-link:hover {
+    gap: 13px;
+    color: var(--color-primary-dark);
+}
+
+
+/* Activity Card */
+
+.activity-card {
+    height: 100%;
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    background-color: var(--color-background);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(15, 23, 42, 0.07);
+}
+
+
+/* Activity Images */
+
+.activity-image {
+    width: 100%;
+    height: 210px;
+
+    background-color: var(--color-primary-light);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+   Temporary image placeholders.
+   Replace with verified and authorized photographs.
+*/
+
+.activity-image-social {
+    background-image: url('../images/activity-social.jpg');
+}
+
+.activity-image-religious {
+    background-image: url('../images/activity-religious.jpg');
+}
+
+.activity-image-education {
+    background-image: url('../images/activity-education.jpg');
+}
+
+
+/* Activity Content */
+
+.activity-content {
+    padding: 20px;
+}
+
+.activity-category {
+    display: inline-block;
+
+    padding: 5px 10px;
+    border-radius: 50px;
+
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.activity-title {
+    margin-top: 12px;
+    margin-bottom: 8px;
+
+    color: var(--color-heading);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.activity-description {
+    margin: 0;
+
+    color: var(--color-text);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   14. ACTIVITIES RESPONSIVE
+======================================== */
+
+@media (max-width: 767.98px) {
+
+    .activities-section {
+        padding: 60px 0;
+    }
+
+    .activities-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .activities-link {
+        margin-bottom: 0;
+    }
+
+    .activity-image {
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .activities-section {
+        padding: 50px 0;
+    }
+
+    .activity-content {
+        padding: 16px;
+    }
+
+}
