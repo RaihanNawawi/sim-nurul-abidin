@@ -1,0 +1,83 @@
+/* ========================================
+   1. DESIGN TOKENS
+======================================== */
+
+:root {
+    /* Brand Colors */
+    --color-primary: #166534;
+    --color-primary-dark: #14532d;
+    --color-primary-light: #dcfce7;
+
+    /* Neutral Colors */
+    --color-heading: #0f172a;
+    --color-text: #475569;
+    --color-muted: #64748b;
+
+    /* Background */
+    --color-background: #ffffff;
+    --color-surface: #f8fafc;
+
+    /* Typography */
+    --font-primary: 'Inter', sans-serif;
+
+    /* Border */
+    --color-border: #e2e8f0;
+
+    /* Layout */
+    --container-width: 1200px;
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+}
+
+
+/* ========================================
+   2. GLOBAL RESET & BASE
+======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background-color: var(--color-background);
+
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ========================================
+   3. GLOBAL UTILITIES
+======================================== */
+
+.text-primary-custom {
+    color: var(--color-primary);
+}
+
+.bg-primary-custom {
+    background-color: var(--color-primary);
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}

@@ -34,7 +34,7 @@ Website resmi Masjid Nurul Abidin yang dikembangkan sebagai pusat informasi digi
 ## Project Structure
 
 ```text
-sim_jami-nurul-abidin/
+sim_nurul-abidin/
 ├── assets/
 │   ├── css/
 │   │   └── style.css
