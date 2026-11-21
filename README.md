@@ -1,6 +1,6 @@
-# Sistem Informasi Masjid Jami' Nurul Abidin
+# Sistem Informasi Masjid Nurul Abidin
 
-Website resmi Masjid Jami' Nurul Abidin yang dikembangkan sebagai pusat informasi digital untuk memperkenalkan masjid, menyampaikan aktivitas dan kebutuhan masjid, serta mempermudah masyarakat mengetahui cara berkontribusi.
+Website resmi Masjid Nurul Abidin yang dikembangkan sebagai pusat informasi digital untuk memperkenalkan masjid, menyampaikan aktivitas dan kebutuhan masjid, serta mempermudah masyarakat mengetahui cara berkontribusi.
 
 ## Project Overview
 
