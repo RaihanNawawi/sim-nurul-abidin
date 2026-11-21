@@ -387,3 +387,172 @@ a {
     }
 
 }
+
+/* ========================================
+   11. ABOUT SECTION
+======================================== */
+
+.about-section {
+    padding: 80px 0;
+    background-color: var(--color-background);
+}
+
+
+/* Section Heading */
+
+.section-badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+    border-radius: 50px;
+
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.section-title {
+    color: var(--color-heading);
+
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+}
+
+
+/* About Image */
+
+.about-image {
+    width: 100%;
+    min-height: 340px;
+
+    border-radius: var(--radius-lg);
+
+    background-color: var(--color-primary-light);
+
+    background-image: url('../images/about-masjid.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* About Description */
+
+.about-description {
+    max-width: 650px;
+    margin-top: 16px;
+
+    color: var(--color-text);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* About Information Cards */
+
+.about-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    height: 100%;
+    min-height: 105px;
+    padding: 16px 12px;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-background);
+
+    transition: border-color 0.2s ease;
+}
+
+.about-info-card:hover {
+    border-color: var(--color-primary);
+}
+
+
+/* Information Icon */
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+/* Information Text */
+
+.about-info-card h6 {
+    margin-bottom: 6px;
+
+    color: var(--color-heading);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.about-info-card p {
+    margin: 0;
+
+    color: var(--color-text);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.about-info-card small {
+    display: block;
+    margin-top: 4px;
+
+    color: var(--color-muted);
+    font-size: 10px;
+}
+
+
+/* ========================================
+   12. ABOUT RESPONSIVE
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    .about-section {
+        padding: 65px 0;
+    }
+
+    .about-image {
+        min-height: 300px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-image {
+        min-height: 250px;
+    }
+
+    .about-info-card {
+        min-height: 90px;
+    }
+
+}

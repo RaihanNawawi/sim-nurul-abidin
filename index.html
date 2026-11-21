@@ -1,236 +1,283 @@
 <!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description"
-          content="Website informasi Masjid Nurul Abidin.">
+    <meta name="description" content="Website informasi Masjid Nurul Abidin." />
 
-    <meta name="theme-color" content="#166534">
+    <meta name="theme-color" content="#166534" />
 
     <title>Masjid Nurul Abidin</title>
 
     <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
-        crossorigin="anonymous">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+      crossorigin="anonymous"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-
-<body>
-
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container">
+      <div class="container">
+        <a class="navbar-brand brand-logo" href="#home">
+          <span class="brand-icon">✦</span>
+          <span>
+            Masjid<br />
+            Nurul Abidin
+          </span>
+        </a>
 
-            <a class="navbar-brand brand-logo" href="#home">
-                <span class="brand-icon">✦</span>
-                <span>
-                    Masjid Jami'<br>
-                    Nurul Abidin
-                </span>
-            </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Beranda</a>
+            </li>
 
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
 
-            <div class="collapse navbar-collapse" id="mainNavbar">
+            <li class="nav-item">
+              <a class="nav-link" href="#activities">Kegiatan</a>
+            </li>
 
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#needs">Kebutuhan</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Beranda</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#donation">Donasi</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Tentang</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#activities">Kegiatan</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#needs">Kebutuhan</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#donation">Donasi</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Kontak</a>
-                    </li>
-
-                    <li class="nav-item ms-lg-2">
-                        <a href="#donation" class="btn btn-primary-custom">
-                            ♡ Dukung Masjid
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
+            <li class="nav-item ms-lg-2">
+              <a href="#donation" class="btn btn-primary-custom">
+                ♡ Dukung Masjid
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-
 
     <!-- HERO SECTION -->
     <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Hero Content -->
+          <div class="col-lg-5">
+            <span class="hero-badge"> Selamat Datang </span>
 
-        <div class="container">
-            <div class="row align-items-center g-4">
+            <h1 class="hero-title mt-3">
+              Masjid<br />
+              Nurul Abidin
+            </h1>
 
-                <!-- Hero Content -->
-                <div class="col-lg-5">
+            <p class="hero-description">
+              Pusat ibadah, ilmu, dan kegiatan sosial bagi masyarakat.
+            </p>
 
-                    <span class="hero-badge">
-                        Selamat Datang
-                    </span>
+            <div class="hero-actions">
+              <a href="#donation" class="btn btn-primary-custom">
+                ♡ Dukung Masjid
+              </a>
 
-                    <h1 class="hero-title mt-3">
-                        Masjid Jami'<br>
-                        Nurul Abidin
-                    </h1>
+              <a href="#activities" class="btn btn-outline-custom">
+                Lihat Kegiatan
+              </a>
+            </div>
 
-                    <p class="hero-description">
-                        Pusat ibadah, ilmu, dan kegiatan sosial
-                        bagi masyarakat.
-                    </p>
+            <!-- Quick Information -->
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">⌂</span>
+                <span>Tempat Ibadah</span>
+              </div>
 
-                    <div class="hero-actions">
+              <div class="highlight-item">
+                <span class="highlight-icon">▤</span>
+                <span>Kajian Islam</span>
+              </div>
 
-                        <a href="#donation"
-                           class="btn btn-primary-custom">
-                            ♡ Dukung Masjid
-                        </a>
+              <div class="highlight-item">
+                <span class="highlight-icon">♧</span>
+                <span>Kegiatan Sosial</span>
+              </div>
+            </div>
+          </div>
 
-                        <a href="#activities"
-                           class="btn btn-outline-custom">
-                            Lihat Kegiatan
-                        </a>
-
-                    </div>
-
-                    <!-- Quick Information -->
-                    <div class="hero-highlights">
-
-                        <div class="highlight-item">
-                            <span class="highlight-icon">⌂</span>
-                            <span>Tempat Ibadah</span>
-                        </div>
-
-                        <div class="highlight-item">
-                            <span class="highlight-icon">▤</span>
-                            <span>Kajian Islam</span>
-                        </div>
-
-                        <div class="highlight-item">
-                            <span class="highlight-icon">♧</span>
-                            <span>Kegiatan Sosial</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Hero Image -->
-                <div class="col-lg-7">
-
-                    <div class="hero-image-wrapper">
-
-                        <!--
+          <!-- Hero Image -->
+          <div class="col-lg-7">
+            <div class="hero-image-wrapper">
+              <!--
                             Temporary asset:
                             Replace with an authorized mosque photograph.
                         -->
 
-                        <div
-                            class="hero-image"
-                            role="img"
-                            aria-label="Foto Masjid Jami' Nurul Abidin">
-                        </div>
+              <img
+                src="assets/images/hero_section.avif"
+                alt="Foto Masjid Nurul Abidin"
+                class="hero-image"
+                aria-label="Foto Masjid Nurul Abidin"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- About Image -->
+          <div class="col-lg-4">
+            <img
+              src="assets/images/about_section.jpeg"
+              alt="Dokumentasi Masjid Nurul Abidin"
+              class="about-image"
+              role="img"
+              aria-label="Dokumentasi Masjid Nurul Abidin"
+            />
+          </div>
+
+          <!-- About Content -->
+          <div class="col-lg-8">
+            <div class="about-content">
+              <span class="section-badge"> Tentang Masjid </span>
+
+              <h2 class="section-title mt-3">Mengenal Masjid Nurul Abidin</h2>
+
+              <p class="about-description">
+                Informasi mengenai profil, sejarah, dan aktivitas Masjid Nurul
+                Abidin akan disajikan di sini sebagai sumber informasi bagi
+                masyarakat.
+              </p>
+
+              <!-- About Information -->
+              <div class="row g-3 mt-3">
+                <!-- Location -->
+                <div class="col-md-4">
+                  <div class="about-info-card">
+                    <div class="info-icon">
+                      <span>⌖</span>
                     </div>
 
+                    <div>
+                      <h6>Lokasi</h6>
+                      <p>
+                        Perumahan Citra Batam
+                        <small>Perlu verifikasi</small>
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
+                <!-- Identity -->
+                <div class="col-md-4">
+                  <div class="about-info-card">
+                    <div class="info-icon">
+                      <span>✦</span>
+                    </div>
+
+                    <div>
+                      <h6>Identitas</h6>
+                      <p>
+                        Masjid
+                        <small>Profil resmi menyusul</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Function -->
+                <div class="col-md-4">
+                  <div class="about-info-card">
+                    <div class="info-icon">
+                      <span>◇</span>
+                    </div>
+
+                    <div>
+                      <h6>Informasi</h6>
+                      <p>
+                        Profil dan aktivitas
+                        <small>Detail menyusul</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
+      </div>
     </section>
-
-
-    <!-- ABOUT SECTION PLACEHOLDER -->
-    <section id="about" class="section-placeholder">
-        <div class="container">
-            <p>About Section — Coming Next</p>
-        </div>
-    </section>
-
 
     <!-- ACTIVITIES SECTION PLACEHOLDER -->
     <section id="activities" class="section-placeholder">
-        <div class="container">
-            <p>Activities Section — Coming Next</p>
-        </div>
+      <div class="container">
+        <p>Activities Section — Coming Next</p>
+      </div>
     </section>
-
 
     <!-- NEEDS SECTION PLACEHOLDER -->
     <section id="needs" class="section-placeholder">
-        <div class="container">
-            <p>Needs Section — Coming Next</p>
-        </div>
+      <div class="container">
+        <p>Needs Section — Coming Next</p>
+      </div>
     </section>
-
 
     <!-- DONATION SECTION PLACEHOLDER -->
     <section id="donation" class="section-placeholder">
-        <div class="container">
-            <p>Donation Section — Coming Next</p>
-        </div>
+      <div class="container">
+        <p>Donation Section — Coming Next</p>
+      </div>
     </section>
-
 
     <!-- CONTACT SECTION PLACEHOLDER -->
     <section id="contact" class="section-placeholder">
-        <div class="container">
-            <p>Contact Section — Coming Next</p>
-        </div>
+      <div class="container">
+        <p>Contact Section — Coming Next</p>
+      </div>
     </section>
-
 
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous">
-    </script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- CUSTOM JAVASCRIPT -->
     <script src="assets/js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
