@@ -737,3 +737,367 @@ a {
     }
 
 }
+
+/* ========================================
+   15. NEEDS SECTION
+======================================== */
+
+.needs-section {
+    padding: 75px 0;
+    background-color: var(--color-background);
+}
+
+.needs-description {
+    max-width: 430px;
+    margin-top: 14px;
+
+    color: var(--color-text);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* Needs Card */
+
+.need-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    min-height: 170px;
+    padding: 22px 14px;
+
+    text-align: center;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.need-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+
+/* Needs Icon */
+
+.need-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    margin-bottom: 14px;
+
+    border-radius: 12px;
+
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+
+    font-size: 27px;
+    font-weight: 600;
+}
+
+
+/* Needs Content */
+
+.need-card h3 {
+    margin-bottom: 8px;
+
+    color: var(--color-heading);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.need-card p {
+    margin: 0;
+
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* Needs Note */
+
+.needs-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    margin-top: 20px;
+
+    color: var(--color-muted);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   16. NEEDS RESPONSIVE
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    .needs-section {
+        padding: 60px 0;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .needs-section {
+        padding: 50px 0;
+    }
+
+    .need-card {
+        min-height: 150px;
+    }
+
+}
+
+/* ========================================
+   17. DONATION SECTION
+======================================== */
+
+.donation-section {
+    padding: 80px 0;
+
+    background-color: var(--color-primary-dark);
+}
+
+
+/* Donation Introduction */
+
+.donation-badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+    border-radius: 50px;
+
+    background-color: rgba(220, 252, 231, 0.15);
+    color: #dcfce7;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.donation-title {
+    max-width: 450px;
+
+    color: #ffffff;
+
+    font-size: clamp(30px, 3.5vw, 42px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.donation-description {
+    max-width: 430px;
+    margin-top: 16px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.donation-contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 18px;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: gap 0.2s ease;
+}
+
+.donation-contact-link:hover {
+    gap: 15px;
+    color: #dcfce7;
+}
+
+
+/* Donation Card */
+
+.donation-card {
+    padding: 24px;
+
+    background-color: #ffffff;
+    border-radius: var(--radius-lg);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Donation Header */
+
+.donation-card-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+.donation-method {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px 8px;
+
+    border-radius: 8px;
+
+    background-color: var(--color-surface);
+    color: var(--color-text);
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.donation-method.active {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+
+/* Bank Information */
+
+.donation-bank-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding: 20px;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.donation-bank-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+
+    font-size: 24px;
+}
+
+.donation-bank-content {
+    min-width: 0;
+}
+
+.donation-label {
+    color: var(--color-muted);
+    font-size: 12px;
+}
+
+.donation-bank-content h3 {
+    margin-top: 6px;
+    margin-bottom: 8px;
+
+    color: var(--color-heading);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.donation-bank-content p {
+    margin: 0;
+
+    color: var(--color-text);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* Donation Notice */
+
+.donation-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-top: 16px;
+    padding: 14px;
+
+    background-color: var(--color-primary-light);
+    border-radius: 10px;
+
+    color: var(--color-primary-dark);
+}
+
+.donation-notice span {
+    font-size: 18px;
+}
+
+.donation-notice p {
+    margin: 0;
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   18. DONATION RESPONSIVE
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    .donation-section {
+        padding: 65px 0;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .donation-section {
+        padding: 50px 0;
+    }
+
+    .donation-card {
+        padding: 16px;
+    }
+
+    .donation-method {
+        font-size: 11px;
+    }
+
+    .donation-bank-info {
+        padding: 14px;
+    }
+
+    .donation-bank-content h3 {
+        font-size: 17px;
+    }
+
+}
