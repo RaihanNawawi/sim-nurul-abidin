@@ -81,3 +81,309 @@ a {
 .bg-surface {
     background-color: var(--color-surface);
 }
+
+
+/* ========================================
+   4. NAVBAR
+======================================== */
+
+.navbar {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--color-heading);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.brand-icon {
+    color: var(--color-primary);
+    font-size: 30px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-heading);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-primary);
+}
+
+.navbar-toggler {
+    border: 0;
+    box-shadow: none !important;
+}
+
+
+/* ========================================
+   5. BUTTONS
+======================================== */
+
+.btn-primary-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+    border-radius: 10px;
+
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    color: #ffffff;
+}
+
+.btn-outline-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+    border-radius: 10px;
+
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+}
+
+
+/* ========================================
+   6. HERO SECTION
+======================================== */
+
+.hero-section {
+    padding: 80px 0;
+    overflow: hidden;
+
+    background-color: #f8fcf8;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+    border-radius: 50px;
+
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero-title {
+    color: var(--color-heading);
+
+    font-size: clamp(36px, 4.5vw, 58px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.8px;
+}
+
+.hero-description {
+    max-width: 430px;
+    margin-top: 20px;
+
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+
+/* ========================================
+   7. HERO IMAGE
+======================================== */
+
+.hero-image-wrapper {
+    position: relative;
+    padding-left: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    min-height: 420px;
+
+    border-radius: 24px 24px 24px 80px;
+
+    background-color: #dcefe0;
+
+    background-image:
+        linear-gradient(
+            135deg,
+            rgba(22, 101, 52, 0.08),
+            rgba(22, 101, 52, 0.02)
+        ),
+        url('../images/hero-masjid.jpg');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   8. HERO HIGHLIGHTS
+======================================== */
+
+.hero-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+
+    margin-top: 36px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--color-heading);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.highlight-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    background-color: var(--color-primary-light);
+
+    color: var(--color-primary);
+    font-size: 20px;
+}
+
+
+/* ========================================
+   9. SECTION PLACEHOLDER
+======================================== */
+
+.section-placeholder {
+    padding: 70px 0;
+
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.section-placeholder p {
+    margin: 0;
+    color: var(--color-muted);
+    text-align: center;
+}
+
+
+/* ========================================
+   10. RESPONSIVE
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    .navbar-collapse {
+        padding-top: 18px;
+    }
+
+    .navbar-nav {
+        align-items: stretch !important;
+        gap: 4px !important;
+    }
+
+    .navbar-nav .btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-image-wrapper {
+        padding-left: 0;
+    }
+
+    .hero-image {
+        min-height: 350px;
+        border-radius: 20px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .hero-section {
+        padding: 45px 0;
+    }
+
+    .hero-title {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-highlights {
+        gap: 12px;
+    }
+
+    .highlight-item {
+        font-size: 11px;
+    }
+
+    .hero-image {
+        min-height: 260px;
+    }
+
+}
