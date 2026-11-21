@@ -1101,3 +1101,350 @@ a {
     }
 
 }
+
+/* ========================================
+   19. CONTACT SECTION
+======================================== */
+
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--color-background);
+}
+
+.contact-description {
+    max-width: 450px;
+    margin-top: 14px;
+
+    color: var(--color-text);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* Contact List */
+
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    min-width: 0;
+    min-height: 105px;
+    padding: 16px 12px;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-background);
+}
+
+
+/* Contact Icon */
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+
+    font-size: 20px;
+}
+
+
+/* Contact Content */
+
+.contact-content {
+    min-width: 0;
+}
+
+.contact-content h3 {
+    margin-bottom: 5px;
+
+    color: var(--color-heading);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contact-content p {
+    margin: 0;
+
+    color: var(--color-text);
+    font-size: 12px;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+.contact-content small {
+    display: block;
+    margin-top: 5px;
+
+    color: var(--color-muted);
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* Location Map */
+
+.location-map {
+    min-height: 400px;
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    background-color: var(--color-surface);
+}
+
+.map-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 400px;
+    padding: 30px;
+
+    text-align: center;
+}
+
+.map-placeholder-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+
+    font-size: 32px;
+}
+
+.map-placeholder h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.map-placeholder p {
+    max-width: 300px;
+    margin-top: 8px;
+
+    color: var(--color-muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.map-status {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 7px 12px;
+
+    border-radius: 50px;
+
+    background-color: #fef3c7;
+    color: #92400e;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   20. CONTACT RESPONSIVE
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    .contact-section {
+        padding: 65px 0;
+    }
+
+    .location-map,
+    .map-placeholder {
+        min-height: 320px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        min-height: auto;
+    }
+
+    .location-map,
+    .map-placeholder {
+        min-height: 260px;
+    }
+
+}
+
+/* ========================================
+   21. FOOTER
+======================================== */
+
+.site-footer {
+    padding: 45px 0 20px;
+
+    background-color: var(--color-primary-dark);
+    color: #ffffff;
+}
+
+
+/* Footer Brand */
+
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.footer-brand:hover {
+    color: #dcfce7;
+}
+
+.footer-brand-icon {
+    font-size: 32px;
+}
+
+.footer-description {
+    margin-top: 14px;
+    margin-bottom: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* Footer Navigation */
+
+.footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-navigation a {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.footer-navigation a:hover {
+    color: #bbf7d0;
+}
+
+
+/* Footer Social */
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-social span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.footer-social p {
+    margin-top: 8px;
+    margin-bottom: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    margin-top: 35px;
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+}
+
+
+/* ========================================
+   22. FOOTER RESPONSIVE
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    .footer-navigation {
+        justify-content: flex-start;
+    }
+
+    .footer-social {
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .site-footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-navigation {
+        gap: 14px 20px;
+    }
+
+    .footer-bottom {
+        text-align: left;
+    }
+
+}
