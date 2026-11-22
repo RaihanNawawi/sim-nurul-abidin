@@ -6,7 +6,7 @@
 
     <meta name="description" content="Website informasi Masjid Nurul Abidin." />
 
-    <meta name="theme-color" content="#166534" />
+    <meta name="theme-color" content="#fdfcf9" />
 
     <title>Masjid Nurul Abidin</title>
 
@@ -32,12 +32,12 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg hero-nav fixed-top">
       <div class="container">
         <a class="navbar-brand brand-logo" href="#home">
           <span class="brand-icon">✦</span>
           <span>
-            Masjid<br />
+            Masjid Jami'<br />
             Nurul Abidin
           </span>
         </a>
@@ -56,9 +56,6 @@
 
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">Beranda</a>
-            </li>
 
             <li class="nav-item">
               <a class="nav-link" href="#about">Tentang</a>
@@ -73,16 +70,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#donation">Donasi</a>
-            </li>
-
-            <li class="nav-item">
               <a class="nav-link" href="#contact">Kontak</a>
             </li>
 
             <li class="nav-item ms-lg-2">
               <a href="#donation" class="btn btn-primary-custom">
-                ♡ Dukung Masjid
+                ♡  Dukung Masjid
               </a>
             </li>
           </ul>
@@ -92,68 +85,96 @@
 
     <!-- HERO SECTION -->
     <section id="home" class="hero-section">
+      <div class="hero-image-wrapper">
+        <img
+          src="assets/images/hero_section.avif"
+          alt="Foto Masjid Nurul Abidin"
+          class="hero-image"
+        />
+      </div>
+
       <div class="container">
         <div class="row align-items-center g-4">
           <!-- Hero Content -->
-          <div class="col-lg-5">
-            <span class="hero-badge"> Selamat Datang </span>
-
+          <div class="col-lg-7">
+            <span class="hero-location">
+              <span aria-hidden="true">⌖</span>
+              Batam, Kepulauan Riau
+            </span>
             <h1 class="hero-title mt-3">
-              Masjid<br />
-              Nurul Abidin
+              Selamat Datang di<br />
+              Masjid Jami’<br />
+              <span>Nurul Abidin</span>
             </h1>
 
             <p class="hero-description">
-              Menjadi pusat ibadah, kegiatan keagamaan, dan kepedulian sosial
-              bagi masyarakat di lingkungan Perumahan Citra Batam.
+              Temukan informasi tentang kegiatan, kebutuhan, serta cara
+              mendukung Masjid Jami' Nurul Abidin.
             </p>
 
             <div class="hero-actions">
               <a href="#donation" class="btn btn-primary-custom">
-                ♡ Dukung Masjid
+                <span aria-hidden="true">♡</span> Dukung Masjid
               </a>
 
               <a href="#activities" class="btn btn-outline-custom">
-                Lihat Kegiatan
+                <span aria-hidden="true">▣</span> Lihat Kegiatan
               </a>
             </div>
-
-            <!-- Quick Information -->
-            <div class="hero-highlights">
-
-    <div class="highlight-item">
-        <span class="highlight-icon">⌂</span>
-        <span>Pusat Ibadah</span>
-    </div>
-
-    <div class="highlight-item">
-        <span class="highlight-icon">▤</span>
-        <span>Kegiatan Keagamaan</span>
-    </div>
-
-    <div class="highlight-item">
-        <span class="highlight-icon">♧</span>
-        <span>Kepedulian Sosial</span>
-    </div>
-
-</div>
           </div>
 
-          <!-- Hero Image -->
-          <div class="col-lg-7">
-            <div class="hero-image-wrapper">
-              <!--
-                            Temporary asset:
-                            Replace with an authorized mosque photograph.
-                        -->
+        </div>
+      </div>
+    </section>
 
-              <img
-                src="assets/images/hero_section.avif"
-                alt="Foto Masjid Nurul Abidin"
-                class="hero-image"
-                aria-label="Foto Masjid Nurul Abidin"
-              />
+    <!-- PRAYER TIMES -->
+    <section class="prayer-section" aria-labelledby="prayer-title">
+      <div class="container">
+        <div class="prayer-card">
+          <div class="prayer-heading">
+            <span class="prayer-mosque-icon" aria-hidden="true">⌂</span>
+            <div>
+              <h2 id="prayer-title">Jadwal Waktu Salat</h2>
+              <p>Untuk wilayah Batam Kota dan sekitarnya</p>
             </div>
+          </div>
+
+          <div class="prayer-times">
+            <article class="prayer-time">
+              <span class="prayer-time-icon" aria-hidden="true">☾</span>
+              <h3>Imsak</h3>
+              <time datetime="04:32">04:32</time>
+            </article>
+            <article class="prayer-time">
+              <span class="prayer-time-icon" aria-hidden="true">☼</span>
+              <h3>Subuh</h3>
+              <time datetime="04:42">04:42</time>
+            </article>
+            <article class="prayer-time">
+              <span class="prayer-time-icon" aria-hidden="true">☀</span>
+              <h3>Dhuha</h3>
+              <time datetime="06:38">06:38</time>
+            </article>
+            <article class="prayer-time">
+              <span class="prayer-time-icon" aria-hidden="true">☀</span>
+              <h3>Dzuhur</h3>
+              <time datetime="12:10">12:10</time>
+            </article>
+            <article class="prayer-time">
+              <span class="prayer-time-icon" aria-hidden="true">☀</span>
+              <h3>Ashar</h3>
+              <time datetime="15:34">15:34</time>
+            </article>
+            <article class="prayer-time">
+              <span class="prayer-time-icon" aria-hidden="true">☼</span>
+              <h3>Magrib</h3>
+              <time datetime="18:19">18:19</time>
+            </article>
+            <article class="prayer-time">
+              <span class="prayer-time-icon" aria-hidden="true">☾</span>
+              <h3>Isya</h3>
+              <time datetime="19:33">19:33</time>
+            </article>
           </div>
         </div>
       </div>
@@ -164,81 +185,65 @@
       <div class="container">
         <div class="row align-items-center g-4 g-lg-5">
           <!-- About Image -->
-          <div class="col-lg-4">
-            <img
-              src="assets/images/about_section.jpeg"
-              alt="Dokumentasi Masjid Nurul Abidin"
-              class="about-image"
-              role="img"
-              aria-label="Dokumentasi Masjid Nurul Abidin"
-            />
+          <div class="col-lg-5">
+            <div class="about-image-frame">
+              <img
+                src="assets/images/hero_section.avif"
+                alt="Tampak luar Masjid Nurul Abidin"
+                class="about-image"
+              />
+            </div>
           </div>
 
           <!-- About Content -->
-          <div class="col-lg-8">
+          <div class="col-lg-7">
             <div class="about-content">
-              <span class="section-badge"> Tentang Masjid </span>
-
-              <h2 class="section-title mt-3">Mengenal Masjid Nurul Abidin</h2>
+              <h2 class="section-title mt-3">
+                Mengenal Masjid Jami’ Nurul Abidin
+              </h2>
+              <span class="about-title-accent" aria-hidden="true"></span>
 
               <p class="about-description">
-    Masjid Jami' Nurul Abidin merupakan masjid yang
-    berada di kawasan Perumahan Citra Batam, Batam Kota.
-    Selain menjadi tempat ibadah, masjid ini juga pernah
-    dikenal melalui kegiatan sosial Jumat Berkah yang
-    melibatkan dukungan masyarakat sekitar.
-</p>
+                Masjid Jami’ Nurul Abidin berada di kawasan Perumahan Citra
+                Batam, Batam Kota, Kepulauan Riau. Masjid ini menjadi tempat
+                beribadah sekaligus ruang kebersamaan bagi masyarakat sekitar.
+              </p>
 
-              <!-- About Information -->
-              <div class="row g-3 mt-3">
-<!-- Location -->
-<div class="col-md-4">
-    <div class="about-info-card">
-        <div class="info-icon">
-            <span>⌖</span>
-        </div>
-        <div>
-            <h6>Lokasi</h6>
-            <p>
-                Perumahan Citra Batam
-                <small>Batam Kota, Kepulauan Riau</small>
-            </p>
-        </div>
-    </div>
-</div>
+              <div class="about-facts">
+                <div class="about-fact">
+                  <span class="about-fact-icon" aria-hidden="true">⌖</span>
+                  <div>
+                    <h3>Lokasi</h3>
+                    <p>Citra Blok D/63, Komplek Citra Batam, Batam Kota.</p>
+                  </div>
+                </div>
 
-<!-- Building -->
-<div class="col-md-4">
-    <div class="about-info-card">
-        <div class="info-icon">
-            <span>✦</span>
-        </div>
-        <div>
-            <h6>Bangunan</h6>
-            <p>
-                Dua lantai
-                <small>Informasi historis 2019</small>
-            </p>
-        </div>
-    </div>
-</div>
-
-<!-- Social -->
-<div class="col-md-4">
-    <div class="about-info-card">
-        <div class="info-icon">
-            <span>♧</span>
-        </div>
-        <div>
-            <h6>Aktivitas Sosial</h6>
-            <p>
-                Jumat Berkah
-                <small>Dokumentasi historis 2019</small>
-            </p>
-        </div>
-    </div>
-</div>
+                <div class="about-fact">
+                  <span class="about-fact-icon" aria-hidden="true">▦</span>
+                  <div>
+                    <h3>Bangunan</h3>
+                    <p>Dua lantai</p>
+                    <small>Dibangun pada tahun 2001</small>
+                  </div>
+                </div>
               </div>
+
+              <div class="about-event">
+                <span class="about-event-icon" aria-hidden="true">▦</span>
+                <div>
+                  <h3>Jejak Kegiatan</h3>
+                  <p>
+                    Program Jumat Berkah diselenggarakan pada 2019
+                    sebagai bentuk kepedulian kepada masyarakat sekitar yang diliput oleh media lokal Batam Pos.
+                  </p>
+                  <a class="about-event-link" href="https://batampos.co.id/2019/09/04/300-nasi-kotak-di-masjid-jami-nurul-abidin/" target="_blank" rel="noopener noreferrer">
+                    Baca berita di Batam Pos
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+
+              </div>
+
             </div>
           </div>
         </div>
@@ -250,125 +255,83 @@
       <div class="container">
         <!-- Section Header -->
         <div class="activities-header">
-          <div>
-            <span class="section-badge"> Kegiatan Masjid </span>
 
-            <h2 class="section-title mt-3">Kegiatan dan Aktivitas</h2>
+          <h2 class="section-title mt-3">Kegiatan dan Aktivitas</h2>
+          <span class="section-title-accent" aria-hidden="true"></span>
 
-            <p class="activities-description">
-              Berbagai kegiatan ibadah, kajian, dan aktivitas sosial yang
-              melibatkan jamaah dan masyarakat.
-            </p>
-          </div>
-
-          <a
-            href="#activities"
-            class="activities-link"
-            aria-label="Lihat semua kegiatan"
-          >
-            Lihat Semua Kegiatan <span>→</span>
-          </a>
+          <p class="activities-description">
+            Berbagai kegiatan ibadah, kajian, dan aktivitas sosial yang
+            melibatkan jamaah dan masyarakat.
+          </p>
         </div>
 
         <!-- Activity Cards -->
-        <div class="row g-4 mt-3">
+        <div class="row g-4 mt-4">
           <!-- Activity 1 -->
           <div class="col-md-6 col-lg-4">
             <article class="activity-card">
-              <img src="https://images.pexels.com/photos/7156158/pexels-photo-7156158.jpeg"
-                class="activity-image activity-image-social"
-                role="img"
-                aria-label="Placeholder dokumentasi kegiatan sosial"
+              <img
+                src="https://images.pexels.com/photos/7156158/pexels-photo-7156158.jpeg"
+                class="activity-image"
+                alt="Ilustrasi pembagian makanan kepada masyarakat"
+                loading="lazy"
+                decoding="async"
               />
 
               <div class="activity-content">
+                <span class="activity-category">Kegiatan Sosial</span>
 
-    <span class="activity-category">
-        Kegiatan Sosial
-    </span>
-
-    <h3 class="activity-title">
-        Program Jumat Berkah
-    </h3>
-
-    <p class="activity-description">
-        Dokumentasi program berbagi makan siang gratis
-        bagi jamaah salat Jumat. Pada Agustus 2019,
-        program ini diberitakan menyediakan hingga
-        300 nasi kotak melalui dukungan masyarakat.
-    </p>
-
-    <small class="activity-date">
-        Dokumentasi: 30 Agustus 2019
-    </small>
-
-</div>
+                <h3 class="activity-title">Program Jumat Berkah</h3>
+                <p class="activity-description">
+                  Program Jumat Berkah pernah menjadi wadah berbagi makanan
+                  bagi masyarakat sekitar masjid.
+                </p>
+              </div>
             </article>
           </div>
 
           <!-- Activity 2 -->
           <div class="col-md-6 col-lg-4">
             <article class="activity-card">
-              <img src="https://images.pexels.com/photos/33789420/pexels-photo-33789420.jpeg"
-                class="activity-image activity-image-religious"
-                role="img"
-                aria-label="Placeholder dokumentasi kegiatan keagamaan"
+              <img
+                src="https://images.pexels.com/photos/33789420/pexels-photo-33789420.jpeg"
+                class="activity-image"
+                alt="Ilustrasi kegiatan kajian keagamaan"
+                loading="lazy"
+                decoding="async"
               />
 
               <div class="activity-content">
+                <span class="activity-category">Kegiatan Keagamaan</span>
 
-    <span class="activity-category">
-        Kegiatan Keagamaan
-    </span>
-
-    <h3 class="activity-title">
-        Salat Jumat Berjamaah
-    </h3>
-
-    <p class="activity-description">
-        Masjid menjadi tempat masyarakat berkumpul
-        untuk melaksanakan ibadah salat Jumat
-        dan mempererat silaturahmi.
-    </p>
-
-    <small class="activity-date">
-        Ilustrasi aktivitas masjid
-    </small>
-
-</div>
+                <h3 class="activity-title">Kajian Fikih</h3>
+                <p class="activity-description">
+                  Kajian kitab fikih rutin setiap Rabu selepas salat Magrib
+                  bersama Ustaz Ahmad Badawi.
+                </p>
+              </div>
             </article>
           </div>
 
           <!-- Activity 3 -->
           <div class="col-md-6 col-lg-4">
             <article class="activity-card">
-              <img src="https://images.pexels.com/photos/6647012/pexels-photo-6647012.jpeg"
-                class="activity-image activity-image-education"
-                role="img"
-                aria-label="Placeholder dokumentasi kegiatan pendidikan"
+              <img
+                src="https://images.pexels.com/photos/6647012/pexels-photo-6647012.jpeg"
+                class="activity-image"
+                alt="Ilustrasi kegiatan sosial masyarakat"
+                loading="lazy"
+                decoding="async"
               />
 
-<div class="activity-content">
-
-    <span class="activity-category">
-        Kepedulian Sosial
-    </span>
-
-    <h3 class="activity-title">
-        Kontribusi Masyarakat
-    </h3>
-
-    <p class="activity-description">
-        Dukungan masyarakat menjadi bagian penting
-        dalam penyelenggaraan kegiatan sosial masjid,
-        termasuk program berbagi makanan kepada jamaah.
-    </p>
-
-    <small class="activity-date">
-        Referensi: Batam Pos, 2019
-    </small>
-
-</div>
+              <div class="activity-content">
+                <span class="activity-category">Kepedulian Sosial</span>
+                <h3 class="activity-title">Kontribusi Masyarakat</h3>
+                <p class="activity-description">
+                  Dukungan masyarakat menjadi bagian penting dalam kegiatan
+                  sosial masjid, termasuk berbagi makanan kepada jamaah.
+                </p>
+              </div>
             </article>
           </div>
         </div>
@@ -381,9 +344,9 @@
         <div class="row align-items-center g-4">
           <!-- Needs Introduction -->
           <div class="col-lg-5">
-            <span class="section-badge"> Kebutuhan Masjid </span>
 
             <h2 class="section-title mt-3">Kebutuhan dan Dukungan</h2>
+            <span class="section-title-accent" aria-hidden="true"></span>
 
             <p class="needs-description">
               Dukungan masyarakat dapat membantu memenuhi kebutuhan fasilitas
@@ -398,64 +361,52 @@
               <!-- Facility -->
               <div class="col-md-4">
                 <article class="need-card">
-
-    <div class="need-icon">
-        <span>▱</span>
-    </div>
-
-    <h3>Pengembangan Fasilitas</h3>
-
-    <p>
-        Contoh kebutuhan: peningkatan fasilitas
-        dan kenyamanan area ibadah.
-    </p>
-
-</article>
+                  <div class="need-icon">
+                    <span aria-hidden="true">▣</span>
+                  </div>
+                  <h3>Pengembangan Fasilitas</h3>
+                  <p>
+                    Contoh kebutuhan: peningkatan fasilitas dan kenyamanan
+                    area ibadah.
+                  </p>
+                </article>
               </div>
 
               <!-- Maintenance -->
               <div class="col-md-4">
                 <article class="need-card">
-
-    <div class="need-icon">
-        <span>⚒</span>
-    </div>
-
-    <h3>Perawatan Bangunan</h3>
-
-    <p>
-        Contoh kebutuhan: pemeliharaan bangunan,
-        kebersihan, dan fasilitas pendukung.
-    </p>
-
-</article>
+                  <div class="need-icon">
+                    <span aria-hidden="true">⚒</span>
+                  </div>
+                  <h3>Perawatan Bangunan</h3>
+                  <p>
+                    Contoh kebutuhan: pemeliharaan bangunan, kebersihan,
+                    dan fasilitas pendukung.
+                  </p>
+                </article>
               </div>
 
               <!-- Operational -->
               <div class="col-md-4">
                 <article class="need-card">
-
-    <div class="need-icon">
-        <span>♧</span>
-    </div>
-
-    <h3>Operasional Masjid</h3>
-
-    <p>
-        Contoh kebutuhan: mendukung kegiatan
-        ibadah dan aktivitas sosial masjid.
-    </p>
-
-</article>
+                  <div class="need-icon">
+                    <span aria-hidden="true">♧</span>
+                  </div>
+                  <h3>Operasional Masjid</h3>
+                  <p>
+                    Contoh kebutuhan: mendukung kegiatan ibadah dan aktivitas
+                    sosial masjid.
+                  </p>
+                </article>
               </div>
             </div>
 
             <p class="needs-note">
-    <span>ⓘ</span>
-    Kategori di atas merupakan ilustrasi awal.
-    Daftar kebutuhan aktual dan prioritas pendanaan
-    akan ditentukan berdasarkan konfirmasi pengurus.
-</p>
+              <span aria-hidden="true">ⓘ</span>
+              Informasi kebutuhan masjid dapat berubah sesuai prioritas dan
+              keputusan pengurus. Masyarakat dapat menghubungi pengurus untuk
+              informasi lebih lanjut.
+            </p>
           </div>
         </div>
       </div>
@@ -464,79 +415,105 @@
     <!-- DONATION SECTION -->
     <section id="donation" class="donation-section">
       <div class="container">
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center g-4 g-lg-5">
           <!-- Donation Introduction -->
-          <div class="col-lg-5">
-            <span class="donation-badge"> Dukung Masjid </span>
+          <div class="col-lg-4">
 
             <h2 class="donation-title mt-3">Mari Berkontribusi untuk Masjid</h2>
+            <span class="section-title-accent donation-title-accent" aria-hidden="true"></span>
 
             <p class="donation-description">
-    Setiap dukungan memiliki arti bagi keberlangsungan
-    aktivitas masjid. Masyarakat dapat berkontribusi
-    melalui donasi maupun bentuk bantuan lain yang
-    telah dikoordinasikan bersama pengurus.
-</p>
-
-            <a href="#contact" class="donation-contact-link">
-              Hubungi Pengurus
-              <span>→</span>
-            </a>
+              Setiap dukungan membantu menjaga keberlangsungan aktivitas
+              masjid. Rincian kanal donasi resmi akan ditampilkan setelah
+              dikonfirmasi oleh pengurus.
+            </p>
           </div>
 
           <!-- Donation Information -->
-          <div class="col-lg-7">
+          <div class="col-lg-8">
             <div class="donation-card">
-              <div class="donation-card-header">
-                <div class="donation-method active">
-                  <span>▣</span>
+              <div class="donation-card-header" role="group" aria-label="Pilih metode kontribusi">
+                <button
+                  class="donation-method active"
+                  type="button"
+                  data-donation-target="bank"
+                  aria-pressed="true"
+                >
+                  <span aria-hidden="true">▣</span>
                   Transfer Bank
-                </div>
+                </button>
 
-                <div class="donation-method">
-                  <span>◉</span>
-                  Konfirmasi Donasi
+                <button
+                  class="donation-method"
+                  type="button"
+                  data-donation-target="qris"
+                  aria-pressed="false"
+                >
+                  <span aria-hidden="true">▦</span>
+                  QRIS
+                </button>
+              </div>
+
+              <div class="donation-panel" data-donation-panel="bank">
+                <div class="donation-bank-info">
+                  <div class="donation-bank-icon">
+                    <img
+                      class="donation-bank-logo"
+                      src="assets/images/bsi-logo.png"
+                      alt="Logo Bank Syariah Indonesia"
+                    />
+                  </div>
+
+                  <div class="donation-bank-content">
+                    <span class="donation-label">Transfer ke rekening</span>
+                    <h3>Bank Syariah Indonesia (BSI)</h3>
+
+                    <div class="donation-account">
+                      <span>Nomor rekening</span>
+                      <strong>7264 0320 1234 789</strong>
+                      <small>a.n. <strong>Masjid Jami' Nurul Abidin</strong></small>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="donation-bank-info">
+              <div class="donation-panel" data-donation-panel="qris" hidden>
+                <div class="donation-qris-layout">
+                  <figure class="donation-qris-figure">
+                    <span class="donation-dummy-badge">QRIS Dummy</span>
+                    <img
+                      class="donation-qris-image"
+                      src="assets/images/qris-dummy.png"
+                      alt="Contoh QRIS dummy untuk tampilan, bukan QRIS Masjid Nurul Abidin."
+                      decoding="async"
+                    />
+                    <figcaption>
+                      Gambar contoh saja — jangan digunakan untuk pembayaran.
+                    </figcaption>
+                  </figure>
 
-    <div class="donation-bank-icon">
-        <span>▤</span>
-    </div>
+                  <div class="donation-bank-content donation-qris-content">
+                    <span class="donation-label">Pembayaran nontunai</span>
+                    <h3>QRIS untuk donasi</h3>
+                    <p>
+                      QRIS resmi masjid akan menggantikan gambar contoh ini
+                      setelah dikonfirmasi oleh pengurus.
+                    </p>
+                    <p class="donation-qris-warning">
+                      Pastikan kode QRIS resmi sebelum memindai atau mengirim
+                      pembayaran.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-    <div class="donation-bank-content">
-
-        <span class="donation-label">
-            Bentuk Kontribusi
-        </span>
-
-        <h3>Berbagai Bentuk Dukungan</h3>
-
-        <p>
-            Donasi dana, bantuan kebutuhan masjid,
-            maupun kontribusi sosial seperti
-            penyediaan makanan untuk jamaah.
-        </p>
-
-    </div>
-
-</div>
-
-<div class="donation-notice">
-
-    <span>ⓘ</span>
-
-    <p>
-        Informasi rekening dan mekanisme donasi
-        resmi akan ditambahkan setelah mendapatkan
-        konfirmasi dan persetujuan pengurus masjid.
-    </p>
-
-</div>
-<a href="#contact" class="btn btn-primary-custom mt-3">
-    Hubungi Pengurus
-</a>
+              <div class="donation-notice">
+                <span aria-hidden="true">ⓘ</span>
+                <p>
+                  Pastikan informasi rekening atau QRIS telah dikonfirmasi
+                  pengurus sebelum melakukan donasi.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -549,53 +526,76 @@
         <div class="row align-items-center g-4 g-lg-5">
           <!-- Contact Information -->
           <div class="col-lg-5">
-            <span class="section-badge"> Kontak & Lokasi </span>
 
             <h2 class="section-title mt-3">Hubungi Kami</h2>
+            <span class="section-title-accent" aria-hidden="true"></span>
 
             <p class="contact-description">
-    Ingin mengetahui informasi lebih lanjut,
-    berkunjung, atau berkontribusi untuk masjid?
-    Hubungi pengurus melalui kanal komunikasi resmi.
-</p>
+              Untuk informasi kegiatan, kunjungan, maupun kontribusi, silakan
+              hubungi pengurus melalui kanal resmi yang tersedia.
+            </p>
 
             <!-- Contact Cards -->
-            <div class="contact-card">
+            <div class="contact-list">
+              <article class="contact-card">
+                <div class="contact-icon" aria-hidden="true">
+                  <span>☏</span>
+                </div>
+                <div class="contact-content">
+                  <h3>WhatsApp</h3>
+                  <p>(+62) 812-3456-7890</p>
+                </div>
+              </article>
 
-    <div class="contact-icon">
-        <span>⌖</span>
-    </div>
+              <article class="contact-card">
+                <div class="contact-icon" aria-hidden="true">
+                  <span>✉</span>
+                </div>
+                <div class="contact-content">
+                  <h3>Email</h3>
+                  <p>nurulabidinbatam@gmail.com</p>
+                </div>
+              </article>
 
-    <div class="contact-content">
-        <h3>Alamat</h3>
-
-        <p>
-            Perumahan Citra Batam,
-            Batam Kota, Kepulauan Riau.
-        </p>
-
-        <small>
-            Alamat lengkap menunggu verifikasi
-        </small>
-    </div>
-
-</div>
+              <article class="contact-card contact-address-card">
+                <div class="contact-icon" aria-hidden="true">
+                  <span>⌖</span>
+                </div>
+                <div class="contact-content">
+                  <h3>Alamat</h3>
+                  <p>
+                    Komplek Citra Batam, JL Citra Kota Mas, Teluk
+                    Tering, Nongsa, Tlk. Tering, Kec. Batam Kota, Kota Batam,
+                    Kepulauan Riau 29444.
+                  </p>
+                  <small>Terletak di Citra Blok D/63.</small>
+                </div>
+              </article>
+            </div>
           </div>
 
           <!-- Location Map -->
           <div class="col-lg-7">
             <div class="location-map">
-              <div class="map-placeholder">
-                <div class="map-placeholder-icon">⌖</div>
+              <iframe
+                title="Peta lokasi Masjid Nurul Abidin di Batam"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1223.005446097649!2d104.04447286947662!3d1.122617762002836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d9891853657bcb%3A0xc234affcc02f349d!2sMasjid%20Nurul%20Abidin!5e0!3m2!1sid!2sid!4v1795361628264!5m2!1sid!2sid"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
 
-                <h3>Lokasi Masjid</h3>
-
-                <p>
-                  Peta lokasi akan ditampilkan setelah alamat dan koordinat
-                  masjid dikonfirmasi.
-                </p>
-
-                <span class="map-status"> Lokasi perlu diverifikasi </span>
+              <div class="map-label">
+                <h3>Masjid Jami’ Nurul Abidin</h3>
+                <p>Citra Blok D/63, Komplek Citra Batam, Batam Kota.</p>
+                <a
+                  href="https://maps.google.com/?q=1.122617762002836,104.04447286947662"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Buka di Google Maps
+                  <span aria-hidden="true">↗</span>
+                </a>
               </div>
             </div>
           </div>
@@ -605,42 +605,111 @@
 
     <!-- FOOTER -->
     <footer class="site-footer">
+      <svg
+        class="footer-mosque-art footer-mosque-left"
+        viewBox="0 0 300 190"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+          <path d="M-18 190v-57c0-24 17-44 44-60 22-13 34-30 42-59 8 29 20 46 42 59 27 16 44 36 44 60v57" />
+          <path d="M-14 135h165M-10 162h171M31 190v-31c0-12 8-21 19-21s19 9 19 21v31" />
+          <path d="M96 190v-39c0-19 13-35 34-47 17-10 26-23 32-44 6 21 15 34 32 44 21 12 34 28 34 47v39" />
+          <path d="M101 151h122M108 173h108M145 190v-26c0-11 8-20 17-20s17 9 17 20v26" />
+        </g>
+      </svg>
+
+      <svg
+        class="footer-mosque-art footer-mosque-right"
+        viewBox="0 0 230 290"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+          <path d="M35 290V92c0-22 13-39 34-51 16-9 25-21 31-41 6 20 15 32 31 41 21 12 34 29 34 51v198" />
+          <path d="M44 104h112M43 149h114M41 194h118M39 239h122M66 103v187M107 101v189M149 103v187" />
+          <path d="M17 290V144c0-17 8-30 22-40M186 104c14 10 22 23 22 40v146" />
+          <path d="M65 72h70M79 48h43" />
+        </g>
+      </svg>
+
       <div class="container">
         <div class="row align-items-center g-4">
           <!-- Brand -->
-          <div class="col-lg-3">
+          <div class="col-lg-3 footer-brand-column">
             <a href="#home" class="footer-brand">
-              <span class="footer-brand-icon">✦</span>
+              <span class="footer-brand-icon" aria-hidden="true">✦</span>
 
               <span>
-                Masjid Jami'<br />
+                Masjid Jami’<br />
                 Nurul Abidin
               </span>
             </a>
 
             <p class="footer-description">
-              Pusat informasi Masjid Jami' Nurul Abidin.
+              Pusat informasi Masjid Jami’ Nurul Abidin.
             </p>
           </div>
 
           <!-- Navigation -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 footer-navigation-column">
+            <h2 class="footer-column-title">Navigasi</h2>
             <nav class="footer-navigation" aria-label="Footer navigation">
-              <a href="#home">Beranda</a>
               <a href="#about">Tentang</a>
               <a href="#activities">Kegiatan</a>
-              <a href="#needs">Kebutuhan</a>
-              <a href="#donation">Donasi</a>
               <a href="#contact">Kontak</a>
+              <a href="#donation">Dukung Masjid</a>
             </nav>
           </div>
 
           <!-- Social Media -->
-          <div class="col-lg-3">
+          <div class="col-lg-3 footer-social-column">
             <div class="footer-social">
-              <span>Ikuti Kami</span>
+              <h2 class="footer-column-title">Ikuti Kami</h2>
 
-              <p>Media sosial resmi akan ditambahkan setelah dikonfirmasi.</p>
+              <p>
+                Tautan media sosial resmi akan ditambahkan setelah
+                dikonfirmasi.
+              </p>
+
+              <div class="footer-social-links">
+                <button
+                  class="footer-social-link"
+                  type="button"
+                  disabled
+                  aria-label="Instagram, tautan resmi belum tersedia"
+                >
+                  <svg
+                    class="footer-social-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle class="footer-instagram-dot" cx="17.5" cy="6.5" r="1" />
+                  </svg>
+                  <span>Instagram</span>
+                </button>
+
+                <button
+                  class="footer-social-link"
+                  type="button"
+                  disabled
+                  aria-label="Facebook, tautan resmi belum tersedia"
+                >
+                  <svg
+                    class="footer-social-icon footer-facebook-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path d="M13.5 20v-7h2.4l.4-2.8h-2.8V8.4c0-.8.3-1.4 1.4-1.4h1.5V4.5c-.7-.1-1.4-.2-2.2-.2-2.2 0-3.7 1.3-3.7 3.9v2H8v2.8h2.5v7h3z" />
+                  </svg>
+                  <span>Facebook</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>

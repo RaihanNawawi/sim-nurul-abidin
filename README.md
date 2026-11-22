@@ -5,8 +5,8 @@ Website resmi Masjid Nurul Abidin yang dikembangkan sebagai pusat informasi digi
 ## Project Overview
 
 **Project Type:** Website / Information System  
-**Project Phase:** MVP  
-**Development Approach:** Rapid Development  
+**Project Phase:** MVP — Blitzkrieg Phase
+**Development Approach:** Rapid Development & Iterative Refinement  
 
 ## Objectives
 
@@ -53,9 +53,12 @@ sim_nurul-abidin/
 - Informasi dan aset sementara akan diperbarui berdasarkan hasil review dan persetujuan stakeholder.
 - Informasi yang belum terverifikasi tidak boleh dipublikasikan sebagai fakta.
 - Website dikembangkan sebagai MVP dan dapat diperluas sesuai kebutuhan.
+- Website dikembangkan dengan pendekatan iterative refinement: implementasi awal, evaluasi, dan penyempurnaan berdasarkan kebutuhan serta feedback stakeholder.
+- Prioritas pengembangan adalah kualitas informasi, kemudahan penggunaan, responsivitas, dan konsistensi visual.
+- Informasi publik harus berdasarkan data yang terverifikasi atau mendapatkan persetujuan stakeholder.
 
 ## Project Status
 **Status:** In Progress
-Currently in the Blitzkrieg Phase — Day 1: Understand & Build.
+Currently in the Blitzkrieg Phase — Day 2: Rapid Development & Refinement.
 
-**Primary Goal:** Deliver an initial website prototype that can be reviewed and evaluated by the mosque stakeholder.
+**Primary Goal:** Improve the existing website MVP through UI/UX refinement, content improvement, and quality validation before stakeholder review.
