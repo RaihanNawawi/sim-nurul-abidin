@@ -69,6 +69,15 @@ a {
     text-decoration: none;
 }
 
+.ui-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+    vertical-align: -0.125em;
+}
+
 
 /* ========================================
    3. GLOBAL UTILITIES
@@ -185,6 +194,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
 
     padding: 12px 22px;
     border-radius: 10px;
